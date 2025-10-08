@@ -1,3 +1,5 @@
+import montisIcon from "../assets/montis-dark.png";
+
 export default function AppIcon() {
   return (
     <div
@@ -9,7 +11,7 @@ export default function AppIcon() {
       "
     >
       <img
-        src="src/assets/montis-dark.png"
+        src={montisIcon}
         alt="Montis"
         className="h-full w-full object-cover rounded-[3rem]"
       />
