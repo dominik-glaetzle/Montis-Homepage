@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Snowfall />
+      <Snowfall snowflakeCount={300} />
       <CardsSection />
       <Footer />
     </>
