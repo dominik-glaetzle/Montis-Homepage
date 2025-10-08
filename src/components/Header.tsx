@@ -26,7 +26,10 @@ function Header() {
             for all Austrian regions with Montis.
           </p>
           <div className={"mt-8 flex justify-center md:justify-start"}>
-            <a href="#" aria-label="Get in the App Store">
+            <a
+              href="https://apps.apple.com/at/app/montis/id6752115991?l=en-GB"
+              aria-label="Get in the App Store"
+            >
               <img
                 src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                 alt="Montis"
