@@ -37,7 +37,7 @@ function Header() {
               <img
                 src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                 alt="Montis"
-                className="h-25 w-auto rounded-3xl md:h-35"
+                className="h-25 w-auto rounded-2xl md:h-35"
               />
             </a>
           </div>
