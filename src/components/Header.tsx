@@ -1,9 +1,13 @@
 import AppIcon from "./AppIcon.tsx";
+import DarkModeButton from "./DarkModeButton.tsx";
 
 function Header() {
   return (
     <div className={"mx-auto max-w-6xl px-6 py-16 md:py-24"}>
       <div className={"grid grid-cols-1 gap-10 items-center md:grid-cols-2"}>
+        <div className="absolute top-6 right-6 md:top-10 md:right-10">
+          <DarkModeButton />
+        </div>
         <div
           className={"flex justify-center md:justify-end order-1 md:order-2"}
         >
@@ -12,14 +16,14 @@ function Header() {
         <div className={"text-center md:text-left order-2 md:order-1"}>
           <h1
             className={
-              "text-6xl font-extrabold tracking-light text-slate-900 md:text-8xl"
+              "text-6xl font-extrabold tracking-tight md:text-8xl text-black dark:text-white"
             }
           >
             Montis
           </h1>
           <p
             className={
-              "mt-6 max-w-xl text-2xl leading-relaxed text-slate-600 md:text-3xl"
+              "mt-6 max-w-xl text-2xl leading-relaxed text-slate-600 md:text-3xl dark:text-white"
             }
           >
             Stay safe in the mountains. Get daily avalanche reports and alerts

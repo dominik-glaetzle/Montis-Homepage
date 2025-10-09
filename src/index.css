@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+@theme {
+    --color-bg: #ffffff;
+    --color-bg-dark: #000000;
+    --color-fg: #000000;
+    --color-fg-dark: #e5e7eb;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+@layer base {
+    html {
+        color-scheme: light;
+        background-color: var(--color-bg);
+    }
+    body {
+        color: var(--color-fg);
+        background-color: inherit;
+    }
+
+    .dark {
+        color-scheme: dark;
+        background-color: var(--color-bg-dark);
+    }
+    .dark body {
+        color: var(--color-fg-dark);
+        background-color: inherit;
+    }
+}

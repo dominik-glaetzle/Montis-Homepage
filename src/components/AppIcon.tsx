@@ -1,4 +1,5 @@
-import montisIcon from "../assets/montis-dark.png";
+import montisDark from "../assets/montis-dark.png";
+import montisLight from "../assets/montis-light.png";
 
 export default function AppIcon() {
   return (
@@ -11,9 +12,15 @@ export default function AppIcon() {
       "
     >
       <img
-        src={montisIcon}
-        alt="Montis"
-        className="h-full w-full object-cover rounded-[3rem]"
+        src={montisLight}
+        alt="Montis Light"
+        className="block dark:hidden h-full w-full object-cover rounded-[3rem]"
+      />
+
+      <img
+        src={montisDark}
+        alt="Montis Dark"
+        className="hidden dark:block h-full w-full object-cover rounded-[3rem]"
       />
     </div>
   );
