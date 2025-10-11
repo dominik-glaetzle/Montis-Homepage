@@ -13,9 +13,9 @@ function Footer() {
             Privacy
           </Link>
 
-          <Link to="/contact" className="hover:underline dark:text-white">
-            Contact
-          </Link>
+          {/*<Link to="/contact" className="hover:underline dark:text-white">*/}
+          {/*  Contact*/}
+          {/*</Link>*/}
         </div>
       </div>
     </footer>
