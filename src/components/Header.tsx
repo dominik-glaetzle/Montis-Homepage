@@ -27,7 +27,7 @@ function Header() {
             }
           >
             Stay safe in the mountains. Get daily avalanche reports and alerts
-            for all Austrian regions with Montis.
+            for all regions in Austria and Italy.
           </p>
           <div className={"mt-8 flex justify-center md:justify-start"}>
             <a

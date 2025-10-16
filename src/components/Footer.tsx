@@ -12,10 +12,6 @@ function Footer() {
           <Link to="/privacy" className="hover:underline dark:text-white">
             Privacy
           </Link>
-
-          {/*<Link to="/contact" className="hover:underline dark:text-white">*/}
-          {/*  Contact*/}
-          {/*</Link>*/}
         </div>
       </div>
     </footer>

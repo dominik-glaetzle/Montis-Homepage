@@ -6,7 +6,6 @@ import "./index.css";
 import App from "./App";
 import Home from "./pages/Home";
 import Privacy from "./pages/Privacy";
-import Contact from "./pages/Contact";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +13,6 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: "privacy", element: <Privacy /> },
-      { path: "contact", element: <Contact /> },
     ],
   },
 ]);

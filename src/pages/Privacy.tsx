@@ -34,8 +34,8 @@ export default function Privacy() {
                 <p>
                   Montis ist eine mobile Anwendung, die aktuelle
                   Lawinenberichte, Gefahrenstufen und Warnungen für Regionen in
-                  Österreich anzeigt. Es werden nur die für den Betrieb
-                  notwendigen personenbezogenen Daten verarbeitet.
+                  Österreich und Italien anzeigt. Es werden nur die für den
+                  Betrieb notwendigen personenbezogenen Daten verarbeitet.
                 </p>
               </Section>
 
@@ -96,10 +96,10 @@ export default function Privacy() {
                 <p>
                   Anfragen bitte an{" "}
                   <a
-                    href="mailto:dev@glaetzle.io"
+                    href="mailto:montis@glaetzle.io"
                     className="text-[#0187CC] dark:text-[##0187CC] underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/60 rounded"
                   >
-                    dev@glaetzle.io
+                    montis@glaetzle.io
                   </a>
                   . Dein Account kann jederzeit auf Anfrage gelöscht werden.
                 </p>
@@ -141,7 +141,7 @@ export default function Privacy() {
                   <br />
                   <strong>Dominik Glätzle</strong>
                   <br />
-                  Email:{" "}
+                  E-Mail:{" "}
                   <a
                     href="mailto:dominik@glaetzle.io"
                     className="text-[#0187CC] dark:text-[#0187CC] underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/60 rounded"
@@ -154,8 +154,8 @@ export default function Privacy() {
               <Section title="2. Purpose">
                 <p>
                   Montis provides avalanche reports, danger levels, and alerts
-                  for Austrian regions. Only data required for operation is
-                  processed.
+                  for Austrian and Italian regions. Only data required for
+                  operation is processed.
                 </p>
               </Section>
 
@@ -193,10 +193,10 @@ export default function Privacy() {
                   You may request access, correction, deletion, or restriction
                   of your data. Contact{" "}
                   <a
-                    href="mailto:dev@glaetzle.io"
+                    href="mailto:montis@glaetzle.io"
                     className="text-[#0187CC] dark:text-[#0187CC] underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/60 rounded"
                   >
-                    dev@glaetzle.io
+                    montis@glaetzle.io
                   </a>{" "}
                   for any request.
                 </p>
