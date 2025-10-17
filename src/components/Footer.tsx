@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import DarkModeButton from "./DarkModeButton.tsx";
 
 function Footer() {
   const { t } = useTranslation();
@@ -10,6 +11,10 @@ function Footer() {
         <p className="text-sm lg:text-lg  dark:text-white">
           © {new Date().getFullYear()} Montis
         </p>
+        {/* ===== FOOTER (Mobile only) ===== */}
+        <div className="mt-1 flex justify-center items-center gap-4 md:hidden">
+          <DarkModeButton />
+        </div>
 
         <div className="flex gap-6">
           <Link to="/privacy" className="hover:underline dark:text-white">
