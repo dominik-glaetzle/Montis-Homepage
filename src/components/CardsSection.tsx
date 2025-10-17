@@ -6,17 +6,17 @@ export default function CardsSection() {
   const lang = i18n.language;
   const reportScreen =
     lang === "de"
-      ? "src/assets/screenshots/report-de.png"
+      ? "../assets/screenshots/report-de.png"
       : lang === "it"
-        ? "src/assets/screenshots/report-it.png"
-        : "src/assets/screenshots/report-en.png";
+        ? "../assets/screenshots/report-it.png"
+        : "../assets/screenshots/report-en.png";
 
   const mapScreen =
     lang === "de"
-      ? "src/assets/screenshots/map-de.png"
+      ? "../assets/screenshots/map-de.png"
       : lang === "it"
-        ? "src/assets/screenshots/map-it.png"
-        : "src/assets/screenshots/map-en.png";
+        ? "../assets/screenshots/map-it.png"
+        : "../assets/screenshots/map-en.png";
   return (
     <section className={"mx-auto max-w-6xl px-6 py-16"}>
       <div className={"grid grid-cols-1 gap-6 md:grid-cols-2"}>

@@ -9,10 +9,10 @@ function Header() {
 
   const appstore =
     lang === "de"
-      ? "src/assets/appstore/appstore-de.svg"
+      ? "../assets/appstore/appstore-de.svg"
       : lang === "it"
-        ? "src/assets/appstore/appstore-it.svg"
-        : "src/assets/appstore/appstore-en.svg";
+        ? "../assets/appstore/appstore-it.svg"
+        : "../assets/appstore/appstore-en.svg";
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-16 md:py-24 relative">
