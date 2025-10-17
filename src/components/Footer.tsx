@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="border-t border-gray-200 dark:border-black py-8 transition-colors duration-500">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row px-4 text-gray-600">
@@ -10,7 +13,10 @@ function Footer() {
 
         <div className="flex gap-6">
           <Link to="/privacy" className="hover:underline dark:text-white">
-            Privacy
+            {t("homepage.privacy")}
+          </Link>
+          <Link to="/support" className="hover:underline dark:text-white">
+            {t("homepage.support")}
           </Link>
         </div>
       </div>
