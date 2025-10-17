@@ -4,5 +4,81 @@
     "appstore-link": "https://apps.apple.com/at/app/montis/id6752115991?l=en-GB",
     "privacy": "Privacy",
     "support": "Support"
+  },
+  "privacy": {
+    "header": "Privacy Policy – Montis",
+    "published": "Last updated:",
+    "published-month": "October",
+
+    "controller": {
+      "title": "1. Controller",
+      "body": "This app is operated by:",
+      "email": "Email:"
+    },
+
+    "purpose": {
+      "title": "2. Purpose of the App",
+      "body": "Montis is a mobile application that displays current avalanche reports, danger levels and warnings for regions in Austria and Italy. Only the personal data necessary for operation are processed."
+    },
+
+    "collected-data": {
+      "title": "3. Data Collected",
+      "email": "Email address",
+      "email2": "for user management (login via Appwrite)",
+      "push": "Push notification token",
+      "push2": "for sending alerts",
+      "regions": "Regional favorites",
+      "regions2": "stored in Appwrite to sync your subscribed regions",
+      "telegram": "Telegram link (optional)",
+      "telegram2": "chat ID for warnings",
+
+      "note": "No sensitive data, payment data or advertising IDs are processed."
+    },
+
+    "data-processing": {
+      "title": "4. Data Processing",
+      "body": "Data processing is carried out via Appwrite Cloud Services (EU servers). All connections are encrypted (HTTPS/TLS). Only the minimum required data are stored."
+    },
+
+    "third-parties": {
+      "title": "5. Disclosure to Third Parties",
+      "intro": "Data is shared only with:",
+      "item1": "Telegram (if the link is active)",
+      "item2": "Appwrite (as hosting provider)",
+      "note": "No data is used for advertising or analytics purposes."
+    },
+
+    "user-rights": {
+      "title": "6. User Rights",
+      "intro": "According to the GDPR you have the right to:",
+      "item1": "Access, rectification, erasure, restriction of processing",
+      "item2": "Data portability and objection",
+      "note": "Requests can be sent to",
+      "note2": " Your account can be deleted upon request at any time."
+    },
+
+    "data-security": {
+      "title": "7. Data Security",
+      "body": "All data is transmitted via HTTPS. Passwords are stored encrypted (never in plain text). Authentication is handled via Appwrite."
+    },
+
+    "changes": {
+      "title": "8. Changes",
+      "body": "This policy may be updated if the app or legal requirements change. The date of the last update is shown above."
+    }
+  },
+  "support": {
+    "header": "Support – Montis",
+    "published": "Last updated:",
+    "published-month": "October",
+    "about-header": "About Montis",
+    "about-text": "Montis is a mobile app that displays current avalanche reports, danger levels, and warnings for regions in Austria and Italy. It helps mountain sports enthusiasts stay safe in the Alps.",
+    "contact-header": "Contact",
+    "contact-text": "If you have any questions or technical issues with the app, please write to me at: ",
+    "privacy-header": "Privacy Policy",
+    "privacy-text": "You can view the full "
+  },
+  "common": {
+    "back-to-montis": "Back to Montis"
   }
 }

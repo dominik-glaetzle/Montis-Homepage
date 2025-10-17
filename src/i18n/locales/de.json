@@ -3,6 +3,83 @@
     "description": "Bleibe sicher in den Bergen. Erhalte tägliche Lawinenberichte und Warnungen für alle Regionen in Österreich und Italien.",
     "appstore-link": "https://apps.apple.com/at/app/montis/id6752115991?l=de-DE",
     "privacy": "Datenschutz",
-    "support": "Hilfe"
+    "support": "Support"
+  },
+  "privacy": {
+    "header": "Datenschutzerklärung – Montis",
+    "published": "Stand:",
+    "published-month": "Oktober",
+
+    "controller": {
+      "title": "1. Verantwortlicher",
+      "body": "Diese App wird betrieben von:",
+      "email": "E-Mail:"
+    },
+
+    "purpose": {
+      "title": "2. Zweck der App",
+      "body": "Montis ist eine mobile Anwendung, die aktuelle Lawinenberichte, Gefahrenstufen und Warnungen für Regionen in Österreich und Italien anzeigt. Es werden nur die für den Betrieb notwendigen personenbezogenen Daten verarbeitet."
+    },
+
+    "collected-data": {
+      "title": "3. Erhobene Daten",
+      "email": "E-Mail-Adresse",
+      "email2": "zur Benutzerverwaltung (Login via Appwrite)",
+      "push": "Push-Benachrichtigungstoken",
+      "push2": "für den Versand von Warnungen",
+      "regions": "Regionale Favoriten",
+      "regions2": "werden in Appwrite gespeichert, um deine abonnierten Regionen zu synchronisieren",
+      "telegram": "Telegram-Verknüpfung (optional)",
+      "telegram2": "Chat-ID für Warnmeldungen",
+
+      "note": "Es werden keine sensiblen Daten, Zahlungsdaten oder Werbe-IDs verarbeitet."
+    },
+
+    "data-processing": {
+      "title": "4. Datenverarbeitung",
+      "body": "Die Datenverarbeitung erfolgt über Appwrite Cloud Services (EU-Server). Alle Verbindungen sind verschlüsselt (HTTPS/TLS). Es werden nur minimal notwendige Daten gespeichert."
+    },
+
+    "third-parties": {
+      "title": "5. Weitergabe an Dritte",
+      "intro": "Eine Weitergabe erfolgt nur an:",
+      "item1": "Telegram (bei aktiver Verknüpfung)",
+      "item2": "Appwrite (als Hosting-Dienstleister)",
+      "note": "Es werden keine Daten zu Werbe- oder Analysezwecken verwendet."
+    },
+
+    "user-rights": {
+      "title": "6. Rechte der Nutzer",
+      "intro": "Du hast gemäß DSGVO das Recht auf:",
+      "item1": "Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung",
+      "item2": "Datenübertragbarkeit und Widerspruch",
+      "note": "Anfragen bitte an",
+      "note2": " Dein Account kann jederzeit auf Anfrage gelöscht werden."
+    },
+
+    "data-security": {
+      "title": "7. Datensicherheit",
+      "body": "Alle Daten werden über HTTPS übertragen. Passwörter werden verschlüsselt gespeichert (kein Klartext). Die Authentifizierung erfolgt über Appwrite."
+    },
+
+    "changes": {
+      "title": "8. Änderungen",
+      "body": "Diese Erklärung kann bei Änderungen der App oder rechtlicher Vorgaben angepasst werden. Das Datum der letzten Aktualisierung steht oben."
+    }
+
+  },
+  "support": {
+    "header": "Support – Montis",
+    "published": "Stand:",
+    "published-month": "Oktober",
+    "about-header": "Über Montis",
+    "about-text": "Montis ist eine mobile App, die aktuelle Lawinenberichte, Gefahrenstufen und Warnungen für Regionen in Österreich und Italien anzeigt. Sie hilft Bergsportlern, in den Alpen sicher zu bleiben.",
+    "contact-header": "Kontakt",
+    "contact-text": "Wenn Sie Fragen oder technische Probleme mit der App haben, schreiben Sie mir: ",
+    "privacy-header": "Datenschutzerklärung",
+    "privacy-text": "Hier finden Sie die vollständige "
+  },
+  "common": {
+    "back-to-montis": "Zurück zu Montis"
   }
 }

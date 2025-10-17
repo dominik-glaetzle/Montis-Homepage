@@ -1,218 +1,122 @@
+import { useTranslation } from "react-i18next";
+import { ArrowLeft } from "lucide-react";
+import LanguageSwitcher from "../components/LanguageSwitcher";
+import DarkModeButton from "../components/DarkModeButton";
+import { useNavigate } from "react-router-dom";
+
 export default function Privacy() {
+  const { t } = useTranslation();
+  const navigate = useNavigate();
+
   return (
     <main className="min-h-screen bg-white text-slate-900 dark:bg-black dark:text-slate-100">
+      <header className="sticky top-0 z-50 flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4 border-b border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-black/80 backdrop-blur-md">
+        <button
+          onClick={() => navigate("/")}
+          className="flex items-center gap-2 text-[#0187CC] dark:text-[#0187CC] hover:underline font-medium transition"
+        >
+          <ArrowLeft size={18} />
+          <p>{t("common.back-to-montis")}</p>
+        </button>
+
+        <div className="flex items-center gap-3 sm:gap-4">
+          <LanguageSwitcher />
+          <DarkModeButton />
+        </div>
+      </header>
+
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24">
-        <section className="grid grid-cols-1 gap-12 lg:grid-cols-2">
+        <section className="grid grid-cols-1 gap-12">
           <article className="space-y-8">
             <header>
               <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#0187CC] dark:text-[#0187CC]">
-                Datenschutzerklärung – Montis
+                {t("privacy.header")}
               </h1>
               <p className="mt-2 text-sm sm:text-base text-slate-600 dark:text-slate-300">
-                <strong>Stand:</strong> Oktober 2025
+                <strong>{t("privacy.published")}</strong>{" "}
+                {t("privacy.published-month")} 2025
               </p>
             </header>
 
             <div className="space-y-8">
-              <Section title="1. Verantwortlicher">
+              <Section title={t("privacy.controller.title")}>
                 <p>
-                  Diese App wird betrieben von:
-                  <br />
+                  {t("privacy.controller.body")} <br />
                   <strong>Dominik Glätzle</strong>
                   <br />
-                  E-Mail:{" "}
+                  {t("privacy.controller.email")}{" "}
                   <a
                     href="mailto:dominik@glaetzle.io"
-                    className="text-[#0187CC] dark:[##0187CC] underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/60 rounded"
+                    className="text-[#0187CC] underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/60 rounded"
                   >
                     dominik@glaetzle.io
                   </a>
                 </p>
               </Section>
 
-              <Section title="2. Zweck der App">
-                <p>
-                  Montis ist eine mobile Anwendung, die aktuelle
-                  Lawinenberichte, Gefahrenstufen und Warnungen für Regionen in
-                  Österreich und Italien anzeigt. Es werden nur die für den
-                  Betrieb notwendigen personenbezogenen Daten verarbeitet.
-                </p>
+              <Section title={t("privacy.purpose.title")}>
+                <p>{t("privacy.purpose.body")}</p>
               </Section>
 
-              <Section title="3. Erhobene Daten">
+              <Section title={t("privacy.collected-data.title")}>
                 <ul className="list-disc pl-5 space-y-1">
                   <li>
-                    <strong>E-Mail-Adresse</strong> – zur Benutzerverwaltung
-                    (Login via Appwrite)
+                    <strong>{t("privacy.collected-data.email")}</strong> –{" "}
+                    {t("privacy.collected-data.email2")}
                   </li>
                   <li>
-                    <strong>Push Notification Token</strong> – für
-                    Benachrichtigungen
+                    <strong>{t("privacy.collected-data.push")}</strong> –{" "}
+                    {t("privacy.collected-data.push2")}
                   </li>
                   <li>
-                    <strong>Regionale Favoriten</strong> – gespeichert in
-                    Appwrite zur Synchronisierung deiner abonnierten Regionen
+                    <strong>{t("privacy.collected-data.regions")}</strong> –{" "}
+                    {t("privacy.collected-data.regions2")}
                   </li>
                   <li>
-                    <strong>Telegram-Verknüpfung (optional)</strong> – Chat-ID
-                    für Warnmeldungen
+                    <strong>{t("privacy.collected-data.telegram")}</strong> –{" "}
+                    {t("privacy.collected-data.telegram2")}
                   </li>
                 </ul>
-                <p>
-                  Es werden keine sensiblen Daten, Zahlungsdaten oder Werbe-IDs
-                  verarbeitet.
-                </p>
+                <p>{t("privacy.collected-data.note")}</p>
               </Section>
 
-              <Section title="4. Datenverarbeitung">
-                <p>
-                  Die Datenverarbeitung erfolgt über{" "}
-                  <strong>Appwrite Cloud Services</strong> (EU-Server). Alle
-                  Verbindungen sind verschlüsselt (HTTPS/TLS). Es werden nur
-                  minimal notwendige Daten gespeichert.
-                </p>
+              <Section title={t("privacy.data-processing.title")}>
+                <p>{t("privacy.data-processing.body")}</p>
               </Section>
 
-              <Section title="5. Weitergabe an Dritte">
-                <p>Eine Weitergabe erfolgt nur an:</p>
+              <Section title={t("privacy.third-parties.title")}>
+                <p>{t("privacy.third-parties.intro")}</p>
                 <ul className="list-disc pl-5 space-y-1">
-                  <li>Telegram (bei aktiver Verknüpfung)</li>
-                  <li>Appwrite (als Hosting-Dienstleister)</li>
+                  <li>{t("privacy.third-parties.item1")}</li>
+                  <li>{t("privacy.third-parties.item2")}</li>
                 </ul>
-                <p>
-                  Keine Daten werden zu Werbe- oder Analysezwecken verwendet.
-                </p>
+                <p>{t("privacy.third-parties.note")}</p>
               </Section>
 
-              <Section title="6. Rechte der Nutzer">
-                <p>Du hast gemäß DSGVO das Recht auf:</p>
+              <Section title={t("privacy.user-rights.title")}>
+                <p>{t("privacy.user-rights.intro")}</p>
                 <ul className="list-disc pl-5 space-y-1">
-                  <li>
-                    Auskunft, Berichtigung, Löschung, Einschränkung der
-                    Verarbeitung
-                  </li>
-                  <li>Datenübertragbarkeit und Widerspruch</li>
+                  <li>{t("privacy.user-rights.item1")}</li>
+                  <li>{t("privacy.user-rights.item2")}</li>
                 </ul>
                 <p>
-                  Anfragen bitte an{" "}
+                  {t("privacy.user-rights.note")}{" "}
                   <a
                     href="mailto:montis@glaetzle.io"
-                    className="text-[#0187CC] dark:text-[##0187CC] underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/60 rounded"
+                    className="text-[#0187CC] underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/60 rounded"
                   >
                     montis@glaetzle.io
                   </a>
-                  . Dein Account kann jederzeit auf Anfrage gelöscht werden.
+                  .{t("privacy.user-rights.note2")}
                 </p>
               </Section>
 
-              <Section title="7. Datensicherheit">
-                <p>
-                  Alle Daten werden über HTTPS übertragen. Passwörter werden
-                  verschlüsselt gespeichert (kein Klartext). Authentifizierung
-                  erfolgt über Appwrite.
-                </p>
+              <Section title={t("privacy.data-security.title")}>
+                <p>{t("privacy.data-security.body")}</p>
               </Section>
 
-              <Section title="8. Änderungen">
-                <p>
-                  Diese Erklärung kann bei Änderungen der App oder rechtlicher
-                  Vorgaben angepasst werden. Das Datum der letzten
-                  Aktualisierung steht oben.
-                </p>
-              </Section>
-            </div>
-          </article>
-
-          {/* ===== English ===== */}
-          <article className="space-y-8">
-            <header>
-              <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#0187CC] dark:text-[#0187CC]">
-                Privacy Policy – English
-              </h1>
-              <p className="mt-2 text-sm sm:text-base text-slate-600 dark:text-slate-300">
-                <strong>Last updated:</strong> October 2025
-              </p>
-            </header>
-
-            <div className="space-y-8">
-              <Section title="1. Controller">
-                <p>
-                  This app is operated by:
-                  <br />
-                  <strong>Dominik Glätzle</strong>
-                  <br />
-                  E-Mail:{" "}
-                  <a
-                    href="mailto:dominik@glaetzle.io"
-                    className="text-[#0187CC] dark:text-[#0187CC] underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/60 rounded"
-                  >
-                    dominik@glaetzle.io
-                  </a>
-                </p>
-              </Section>
-
-              <Section title="2. Purpose">
-                <p>
-                  Montis provides avalanche reports, danger levels, and alerts
-                  for Austrian and Italian regions. Only data required for
-                  operation is processed.
-                </p>
-              </Section>
-
-              <Section title="3. Data Collected">
-                <ul className="list-disc pl-5 space-y-1">
-                  <li>Email address – for authentication via Appwrite</li>
-                  <li>Push token – for notifications</li>
-                  <li>
-                    Regional favorites – stored in Appwrite to sync your
-                    subscribed regions
-                  </li>
-                  <li>Telegram account (optional) – chat ID for alerts</li>
-                </ul>
-              </Section>
-
-              <Section title="4. Processing">
-                <p>
-                  All backend services are handled by{" "}
-                  <strong>Appwrite Cloud (EU)</strong>. Communication is
-                  encrypted (HTTPS/TLS).
-                </p>
-              </Section>
-
-              <Section title="5. Sharing">
-                <p>Data is only shared with:</p>
-                <ul className="list-disc pl-5 space-y-1">
-                  <li>Telegram (if linked)</li>
-                  <li>Appwrite (infrastructure provider)</li>
-                </ul>
-                <p>No analytics or ads are used.</p>
-              </Section>
-
-              <Section title="6. User Rights">
-                <p>
-                  You may request access, correction, deletion, or restriction
-                  of your data. Contact{" "}
-                  <a
-                    href="mailto:montis@glaetzle.io"
-                    className="text-[#0187CC] dark:text-[#0187CC] underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/60 rounded"
-                  >
-                    montis@glaetzle.io
-                  </a>{" "}
-                  for any request.
-                </p>
-              </Section>
-
-              <Section title="7. Security">
-                <p>
-                  All data transfers use HTTPS. Passwords are securely hashed.
-                </p>
-              </Section>
-
-              <Section title="8. Updates">
-                <p>
-                  This policy may be updated occasionally. The date of the
-                  latest version is listed above.
-                </p>
+              <Section title={t("privacy.changes.title")}>
+                <p>{t("privacy.changes.body")}</p>
               </Section>
             </div>
           </article>

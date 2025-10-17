@@ -3,6 +3,82 @@
     "description": "Rimani al sicuro in montagna. Ricevi bollettini valanghe e avvisi giornalieri per tutte le regioni dell'Austria e dell'Italia.",
     "appstore-link": "https://apps.apple.com/at/app/montis/id6752115991?l=it-IT",
     "privacy": "Privacy",
-    "support": "Assistenza"
+    "support": "Supporto"
+  },
+  "privacy": {
+    "header": "Informativa sulla privacy – Montis",
+    "published": "Ultimo aggiornamento:",
+    "published-month": "Ottobre",
+
+    "controller": {
+      "title": "1. Responsabile",
+      "body": "Questa app è gestita da:",
+      "email": "E-mail:"
+    },
+
+    "purpose": {
+      "title": "2. Scopo dell'app",
+      "body": "Montis è un'app mobile che mostra bollettini valanghe aggiornati, livelli di pericolo e avvisi per le regioni dell'Austria e dell'Italia. Vengono trattati solo i dati personali necessari al funzionamento dell'app."
+    },
+
+    "collected-data": {
+      "title": "3. Dati raccolti",
+      "email": "Indirizzo e-mail",
+      "email2": "per la gestione degli utenti (login tramite Appwrite)",
+      "push": "Token di notifica push",
+      "push2": "per l'invio degli avvisi",
+      "regions": "Preferiti regionali",
+      "regions2": "memorizzati in Appwrite per sincronizzare le regioni sottoscritte",
+      "telegram": "Collegamento Telegram (opzionale)",
+      "telegram2": "ID chat per gli avvisi",
+
+      "note": "Non vengono trattati dati sensibili, dati di pagamento o ID pubblicitari."
+    },
+
+    "data-processing": {
+      "title": "4. Trattamento dei dati",
+      "body": "Il trattamento dei dati avviene tramite Appwrite Cloud Services (server UE). Tutte le connessioni sono crittografate (HTTPS/TLS). Vengono archiviati solo i dati strettamente necessari."
+    },
+
+    "third-parties": {
+      "title": "5. Comunicazione a terzi",
+      "intro": "I dati vengono condivisi solo con:",
+      "item1": "Telegram (se il collegamento è attivo)",
+      "item2": "Appwrite (come fornitore di hosting)",
+      "note": "Nessun dato viene utilizzato per scopi pubblicitari o di analisi."
+    },
+
+    "user-rights": {
+      "title": "6. Diritti dell'utente",
+      "intro": "Ai sensi del GDPR hai il diritto di:",
+      "item1": "Accesso, rettifica, cancellazione, limitazione del trattamento",
+      "item2": "Portabilità dei dati e opposizione",
+      "note": "Le richieste possono essere inviate a",
+      "note2": " Il tuo account può essere eliminato in qualsiasi momento su richiesta."
+    },
+
+    "data-security": {
+      "title": "7. Sicurezza dei dati",
+      "body": "Tutti i dati vengono trasmessi tramite HTTPS. Le password sono memorizzate in forma crittografata (mai in chiaro). L'autenticazione è gestita tramite Appwrite."
+    },
+
+    "changes": {
+      "title": "8. Modifiche",
+      "body": "La presente informativa può essere aggiornata in caso di modifiche all'app o ai requisiti legali. La data dell'ultimo aggiornamento è indicata sopra."
+    }
+  },
+  "support": {
+    "header": "Supporto – Montis",
+    "published": "Ultimo aggiornamento:",
+    "published-month": "Ottobre",
+    "about-header": "Informazioni su Montis",
+    "about-text": "Montis è un'app mobile che mostra bollettini valanghe aggiornati, livelli di pericolo e avvisi per le regioni di Austria e Italia. Aiuta gli appassionati di montagna a rimanere al sicuro nelle Alpi.",
+    "contact-header": "Contatto",
+    "contact-text": "Se hai domande o problemi tecnici con l'app, scrivimi a: ",
+    "privacy-header": "Informativa sulla privacy",
+    "privacy-text": "Puoi visualizzare l'intera "
+  },
+  "common": {
+    "back-to-montis": "Torna a Montis"
   }
 }
