@@ -3,16 +3,16 @@ import DarkModeButton from "./DarkModeButton.tsx";
 import LanguageSwitcher from "./LanguageSwitcher.tsx";
 import { useTranslation } from "react-i18next";
 
+import appstoreDE from "../assets/appstore/appstore-de.svg";
+import appstoreEN from "../assets/appstore/appstore-en.svg";
+import appstoreIT from "../assets/appstore/appstore-it.svg";
+
 function Header() {
   const { i18n, t } = useTranslation();
   const lang = i18n.language;
 
   const appstore =
-    lang === "de"
-      ? "../assets/appstore/appstore-de.svg"
-      : lang === "it"
-        ? "../assets/appstore/appstore-it.svg"
-        : "../assets/appstore/appstore-en.svg";
+    lang === "de" ? appstoreDE : lang === "it" ? appstoreIT : appstoreEN;
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-16 md:py-24 relative">
