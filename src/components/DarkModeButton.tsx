@@ -20,10 +20,22 @@ export default function DarkModeButton() {
   return (
     <button
       onClick={() => setDark((d) => !d)}
-      className="p-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-200 hover:scale-110 transition-transform"
+      className="
+        flex items-center justify-center
+        w-9 h-9 sm:w-10 sm:h-10
+        rounded-full border border-slate-300 dark:border-slate-600
+        bg-slate-100 dark:bg-slate-800
+        text-slate-800 dark:text-slate-200
+        hover:bg-slate-200 dark:hover:bg-slate-700
+        transition-transform active:scale-95
+      "
       aria-label="Toggle Dark Mode"
     >
-      {dark ? <Sun size={20} /> : <Moon size={20} />}
+      {dark ? (
+        <Sun size={18} strokeWidth={2} />
+      ) : (
+        <Moon size={18} strokeWidth={2} />
+      )}
     </button>
   );
 }
